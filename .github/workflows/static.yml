@@ -42,7 +42,7 @@ jobs:
       - name: Build
         run: npm run build -- --configuration production --base-href=/SadiexShahid/
       - name: Copy index.html to 404.html
-        run: cp ./dist/SadiexShahidame/browser/index.html ./dist/SadiexShahidame/browser/404.html
+        run: cp ./dist/SadiexShahid/browser/index.html ./dist/SadiexShahid/browser/404.html
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
