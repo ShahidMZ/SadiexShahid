@@ -31,6 +31,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
       - name: Setup node
         uses: actions/setup-node@v6
         with:
@@ -39,7 +40,10 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build
+        run: npm run build -- --configuration production --base-href=/SadiexShahid/
+      - name: Copy index.html to 404.html
+        run: cp ./dist/SadiexShahidame/browser/index.html ./dist/SadiexShahidame/browser/404.html
+        
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
