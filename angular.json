@@ -26,16 +26,12 @@
                             {
                                 "glob": "**/*",
                                 "input": "public"
-                            },
-                            {
-                                "glob": "index1.html",
-                                "input": "src/assets/",
-                                "output": "/home/"
                             }
                         ],
                         "styles": [
                             "src/styles.css"
-                        ]
+                        ],
+                        "baseHref": "/SadiexShahid/"
                     },
                     "configurations": {
                         "production": {
