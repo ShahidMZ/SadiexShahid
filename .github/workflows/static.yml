@@ -40,7 +40,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build -- --configuration production --base-href=/SadiexShahid/
+        run: npm run build -- --configuration production
       - name: Copy index.html to 404.html
         run: cp ./dist/SadiexShahid/browser/index.html ./dist/SadiexShahid/browser/404.html
         
